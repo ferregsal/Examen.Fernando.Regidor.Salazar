@@ -16,6 +16,9 @@
 
   <body>
     <div class="card-body" id="card-body">
+      <div class="star-container">
+        <img src="./assets/images/icon-star.svg" alt="Rating Star Icon" />
+      </div>
       <h1>¿Cómo lo hicimos?</h1>
       <p>
         Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.
@@ -29,12 +32,14 @@
         <button class="rating-button" value-rating="4">4</button>
         <button class="rating-button" value-rating="5">5</button>
       </div>
-      <button id="submit-btn">ENVIAR</button>
+      <button id="submit-button" disabled>ENVIAR</button>
     </div>
 
     <div class="confirmation-body" id="confirmation" style="display: none">
       <h1>¡Gracias!</h1>
-      <p>Seleccionaste <span id="selected-rating">4</span> de 5</p>
+      <div class="selected-message">
+        <p>Seleccionaste <span id="selected-rating">4</span> de 5</p>
+      </div>
       <p>
         Agradecemos que te hayas tomado el tiempo de dar una calificación. Si
         alguna vez necesitas más ayuda, no dudes en volver a ponerte en contacto
