@@ -3,41 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoT</title>
+    <title>Formulario de Comentarios</title>
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" type="module" defer></script>
+    <script src="./index.js"></script>
   </head>
 
   <body>
-      <div class="card">
-        <img src="./assets/images/icon-star.svg" alt="icon-star" class="icon" />
-        <div class="card-body">
-          <h2 class="question">¿Cómo lo hicimos?</h2>
-          <p class="description-text">
-            Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.
-            Todos los comentarios son bienvenidos para ayudarnos a mejorar
-            nuestra oferta!
-          </p>
-          <div class="rating-radio-buttons">
-            <ul>
-              <li><input type="button" id="button-1" name="button-1" value="1" /></li>
-              <li><input type="button" id="button-2" name="button-2" value="2" /></li>
-              <li><input type="button" id="button-3" name="button-3" value="3" /></li>
-              <li><input type="button" id="button-4" name="button-4" value="4" /></li>
-              <li><input type="button" id="button-5" name="button-5" value="5" /></li>
-            </ul>
-          </div>
-            <div class="user-actions">
-              <button class="user-action">Enviar</button>
-            
-            </div>
-          </div>
-        </div>
+    <div class="card-body" id="card-body">
+      <h1>¿Cómo lo hicimos?</h1>
+      <p>
+        Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.
+        Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra
+        oferta!
+      </p>
+      <div class="rating">
+        <button class="rating-button" value-rating="1">1</button>
+        <button class="rating-button" value-rating="2">2</button>
+        <button class="rating-button" value-rating="3">3</button>
+        <button class="rating-button" value-rating="4">4</button>
+        <button class="rating-button" value-rating="5">5</button>
       </div>
+      <button id="submit-btn">ENVIAR</button>
+    </div>
+
+    <div class="confirmation-body" id="confirmation" style="display: none">
+      <h1>¡Gracias!</h1>
+      <p>Seleccionaste <span id="selected-rating">4</span> de 5</p>
+      <p>
+        Agradecemos que te hayas tomado el tiempo de dar una calificación. Si
+        alguna vez necesitas más ayuda, no dudes en volver a ponerte en contacto
+        con nosotros.
+      </p>
+      <div class="illustration">
+        <img
+          src="./assets/images/illustration-thank-you.svg"
+          alt="A decorative illustration of thanks"
+        />
+      </div>
+    </div>
   </body>
 </html>
