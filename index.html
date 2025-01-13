@@ -9,13 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" type="module" defer></script>
   </head>
 
   <body>
-    <li class="character">
-      <div class="card character__card">
+      <div class="card">
         <img src="./assets/images/icon-star.svg" alt="icon-star" class="icon" />
         <div class="card-body">
           <h2 class="question">¿Cómo lo hicimos?</h2>
@@ -26,31 +25,19 @@
           </p>
           <div class="rating-radio-buttons">
             <ul>
-              <li><input type="radio" id="html" name="1" value="HTML" /></li>
-              <li><input type="radio" id="html" name="2" value="HTML" /></li>
-              <li><input type="radio" id="html" name="3" value="HTML" /></li>
-              <li><input type="radio" id="html" name="4" value="HTML" /></li>
-              <li><input type="radio" id="html" name="5" value="HTML" /></li>
+              <li><input type="button" id="button-1" name="button-1" value="1" /></li>
+              <li><input type="button" id="button-2" name="button-2" value="2" /></li>
+              <li><input type="button" id="button-3" name="button-3" value="3" /></li>
+              <li><input type="button" id="button-4" name="button-4" value="4" /></li>
+              <li><input type="button" id="button-5" name="button-5" value="5" /></li>
             </ul>
           </div>
-          <div class="character__overlay">
-            <ul>
-              <li>Años de reinado: X</li>
-              <li>Arma: XXX</li>
-              <li>Destreza: X</li>
-              <li>Peloteo: X</li>
-              <li>Asesora a: X</li>
-              <li>Sirve a: X</li>
-            </ul>
-            <div class="character__actions">
-              <button class="character__action">habla</button>
-              <button class="character__action">muere</button>
+            <div class="user-actions">
+              <button class="user-action">Enviar</button>
+            
             </div>
           </div>
         </div>
-        <i class="emoji"></i>
       </div>
-    </li>
-    `
   </body>
 </html>
